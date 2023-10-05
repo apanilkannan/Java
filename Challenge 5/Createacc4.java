@@ -1,0 +1,64 @@
+package com.hello.core.P5;
+import java.awt.*;
+import javax.swing.*;
+public class Createacc4 {
+    public static void main(String[] args) {
+        JFrame f = new JFrame();
+        JPanel panel = new JPanel();
+        panel.setBackground(Color.gray); 
+        panel.setBounds(0, 75, 1200, 600);
+        JLabel CreateaccLabel = new JLabel("Create Account");
+        CreateaccLabel.setBounds(510, 10, 180, 30); 
+        CreateaccLabel.setFont(new JLabel().getFont().deriveFont(24.0f));
+        CreateaccLabel.setForeground(Color.red);
+        JLabel AccLabel = new JLabel("Account Number:");
+        AccLabel.setBounds(350, 300, 150, 30); 
+        AccLabel.setForeground(Color.red); 
+        JTextField AccNumberField = new JTextField();
+        AccNumberField.setBounds(500, 300, 280, 30);
+        JLabel PersonNameLabel = new JLabel("Person Name:");
+        PersonNameLabel.setBounds(350, 350, 150, 30);
+        PersonNameLabel.setForeground(Color.red); 
+        JTextField passwordField = new JTextField();
+        passwordField.setBounds(500, 350, 280, 30);
+        JLabel DepositLabel = new JLabel("Deposit Amount:");
+        DepositLabel.setBounds(350, 400, 150, 30);
+        DepositLabel.setForeground(Color.red); 
+        JTextField DepositField = new JTextField();
+        DepositField.setBounds(500, 400, 280, 30);
+        JLabel DepositDateLabel = new JLabel("Deposit Date:");
+        DepositDateLabel.setBounds(350, 450, 150, 30);
+        DepositDateLabel.setForeground(Color.red); 
+        String[] dayOptions = {"Day 1", "Day 2", "Day 3"}; 
+        JComboBox<String> dayComboBox = new JComboBox<>(dayOptions);
+        dayComboBox.setBounds(500, 450, 80, 30);
+        String[] monthOptions = {"Jan", "Feb", "Mar"}; 
+        JComboBox<String> monthComboBox = new JComboBox<>(monthOptions);
+        monthComboBox.setBounds(600, 450, 80, 30);
+        String[] yearOptions = {"2023", "2024", "2025"}; 
+        JComboBox<String> yearComboBox = new JComboBox<>(yearOptions);
+        yearComboBox.setBounds(700, 450, 80, 30);
+        JButton save = new JButton("Save");
+        save.setBounds(450, 500, 90, 30); 
+        JButton cancel = new JButton("Cancel");
+        cancel.setBounds(650, 500, 90, 30);
+        f.add(AccLabel);
+        f.add(AccNumberField);
+        f.add(PersonNameLabel);
+        f.add(passwordField);
+        f.add(DepositLabel);
+        f.add(DepositField);
+        f.add(DepositDateLabel);
+        f.add(dayComboBox);
+        f.add(monthComboBox);
+        f.add(yearComboBox);
+        f.add(cancel);
+        f.add(save);
+        f.add(panel);
+        f.add(CreateaccLabel);
+        f.setSize(1200, 800);
+        f.setLayout(null);
+        f.setVisible(true);
+    }
+}
+

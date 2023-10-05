@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login1</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('https://1.bp.blogspot.com/-fd1WXKk-TAc/XyqfngP4PiI/AAAAAAAAVMw/umQz3tkxtg43uPIy8W5og6gAkpCfjaTvACLcBGAsYHQ/w1563-h1563/bg-snell.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            background-color: #f2f2f2;
+        }
+
+        .login-wrapper {
+            display: flex;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 150px;
+        }
+
+        .social-container {
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            height: 350px;
+            padding: 30px;
+            background-color: #12112c;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container {
+            width: 500px;
+            height: 350px;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+
+        .white-text {
+            color: white;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: 90%;
+        }
+		
+		.brand-logo {
+			margin-top: 0px;
+			margin-bottom: 35px;
+		}
+
+        .login-button {
+            background-color: #4f77ff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .login-button:hover {
+            background-color: #0056b3;
+        }
+
+        .forgot-password {
+            text-align: right;
+        }
+
+        .remember-me {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .remember-me input {
+            margin-right: 5px;
+        }
+
+        .social-button {
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 5px 0;
+            cursor: pointer;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            display: table-cell;
+        }
+
+        .facebook-button {
+            background-color: #3b5998;
+            color: #fff;
+        }
+
+        .twitter-button {
+            background-color: #00aced;
+            color: #fff;
+        }
+
+        .google-button {
+            background-color: #c32f10;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="social-container">
+			<div class="brand-logo">
+              <img src="https://1.bp.blogspot.com/-3he0CGCSWHA/XyqopZcixRI/AAAAAAAAVM8/Mdfk_mPQa0Ydb7IAH0Iir8F4Ge7xxF0ygCLcBGAsYHQ/s0/logo.png" width="150" alt="brand-logo">
+            </div>
+            <p class="white-text">Login using social media to get quick access</p>
+            <button class="social-button facebook-button">Sign in with Facebook</button>
+            <button class="social-button twitter-button">Sign in with Twitter</button>
+            <button class="social-button google-button">Sign in with Google</button>
+        </div>
+        <div class="login-container">
+            <h2>Login to your account</h2>
+            <p>Don't have an account? <a href="#">Sign up Free</a></p>
+            <form class="login-form">
+                <div class="input-group">
+                    <input type="text" id="username" name="username" required placeholder="Email Address">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" required placeholder="Password">
+                </div>
+                <div class="remember-me">
+                    <div>
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <div class="forgot-password">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                </div>
+                <button type="submit" class="login-button">Login with email</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
